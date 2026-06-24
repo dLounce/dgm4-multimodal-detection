@@ -1,0 +1,19 @@
+# Pin exact versions for reproducibility with:  pip freeze > requirements.txt
+# (left unpinned here — developed on Kaggle's GPU image, recent torch + CUDA 12.x)
+
+# Core stack. torch is required, but install the build matching your CUDA /
+# hardware from https://pytorch.org. On Kaggle's GPU image it ships
+# preinstalled, so you can skip installing it there.
+torch
+transformers
+peft
+accelerate
+
+# Tokenizer backends — LLaVA's Llama tokenizer needs both of these
+sentencepiece
+protobuf
+
+# Metrics and image handling
+numpy
+scikit-learn
+Pillow
