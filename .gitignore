@@ -1,0 +1,30 @@
+# trained weights & caches — regenerate these, don't commit them
+*.pt
+*.pth
+clip_cache/
+checkpoints/
+
+# Kaggle offline bundle (wheels + downloaded models)
+offline_bundle/
+wheels/
+models/
+
+# the DGM4 dataset itself, if it ever lands inside the repo
+data/
+DGM4/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
